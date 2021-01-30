@@ -25,7 +25,7 @@ SECRET_KEY = 's=n8*k1sfb$8#zyfm35yzgswrw7%+97)=06y-ua6i-5szdc%so'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["for-linechatbot-in.com"]
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'boardproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2.sqlite3',
+        'NAME': 'django_db',
+        'USER' : 'db_oshimamasara',
+        'PASSWORD' : 'pythonlove',
+        'HOST' : 'localhost',
+        'PORT' : '',
     }
 }
 
