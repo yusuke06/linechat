@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'boardproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_db',
         'USER' : 'db_oshimamasara',
         'PASSWORD' : 'pythonlove',
